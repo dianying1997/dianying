@@ -1,0 +1,15 @@
+server:
+  port: 9999
+
+spring:  datasource:    username: root
+    password: root
+    url: jdbc:mysql:///goodsdemo?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    
+mybatis:  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: org.wdy.boot.demo.bean
+  
+logging:
+  level:
+    org.wdy.boot.goods.mapper : debug
